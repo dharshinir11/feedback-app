@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Feedback App</title>
+     <style>
+        .college-logo {
+            height: 250px; /* adjust as needed */
+            width: 100%;   /* maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* center the image */
+        }
+    </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ random() }}">
+
+    <img src="{{ url_for('static', filename='college_logo.jpeg') }}" alt="College Logo" class="college-logo">
+<h1 style="text-align: center;">First Year SIP-Feedback Portal</h1>
+
+</head>
+<body class="gradient-bg">
+  <div class="form-container">
+  <form id="loginForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email ID" required>
+    <input type="text" id="reg" placeholder="Register Number" required>
+
+    <select id="dept" required>
+      <option value="">Select Department</option>
+      <option value="CSE">CSE</option>
+      <option value="IT">IT</option>
+      <option value="ECE">ECE</option>
+      <option value="EEE">EEE</option>
+      <option value="MECH">MECH</option>
+      <option value="AI-ML">AIML</option>
+  <option value="MECHATRONICS">MECHATRONICS</option>
+  <option value="CSBS">CSBS</option>
+  <option value="CIVIL">CIVIL</option>
+    </select>
+
+    <select id="day" required>
+      <option value="">Select Day</option>
+      <option value="Day 1">Day 1</option>
+      <option value="Day 2">Day 2</option>
+      <option value="Day 3">Day 3</option>
+      <option value="Day 4">Day 4</option>
+      <option value="Day 5">Day 5</option>
+      <option value="Day 6">Day 6</option>
+      <option value="Day 7">Day 7</option>
+      <option value="Day 8">Day 8</option>
+      <option value="Day 9">Day 9</option>
+      <option value="Day 10">Day 10</option>
+      <option value="Day 11">Day 11</option>
+      <option value="Day 12">Day 12</option>
+      <option value="Day 13">Day 13</option>
+      <option value="Day 14">Day 14</option>
+      <option value="Day 15">Day 15</option>
+    </select>
+
+    <button type="submit">Login</button>
+  </form>
+
+  </div>
+   <p style="margin-top: 10px;">
+  <a href="/admin-login" style="color: rgb(84, 9, 9);">Admin? Click here to login</a>
+</p>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const userData = {
+        user: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        reg: document.getElementById('reg').value,
+        dept: document.getElementById('dept').value,
+        day: document.getElementById('day').value
+      };
+
+      localStorage.setItem("user", JSON.stringify(userData));
+      window.location.href = "/dashboard";
+    });
+  </script>
+</body>
+</html>
+
+
