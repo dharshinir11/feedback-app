@@ -20,35 +20,35 @@ const MailIcon = ({ className }) => (
 );
 
 const Footer = () => {
-  const contacts = [
-    {
-      role: 'Principal',
-      people: [
-        { name: 'Dr. L. Ashok Kumar', email: 'principal@tce.edu' },
-      ],
-    },
-    {
-      role: 'Dean - Student Affairs',
-      people: [
-        { name: 'Dr. G. Balaji', email: 'gbarch@tce.edu' },
-      ],
-    },
-    {
-      role: 'Orientation Coordinators',
-      people: [
-        { name: 'H. Sri Vinodhini', email: 'srivinodhini@tce.edu' },
-        { name: 'Dr. P. M Devie', email: 'pmdeee@tce.edu' },
-      ],
-    },
-    {
-      role: 'Orientation Co-Coordinators',
-      people: [
-        { name: 'Dr. G. Jeya Jeevakani', email: 'gjjeng@tce.edu' },
-        { name: 'Dr. S Subash', email: 'ssheng@tce.edu' },
-        { name: 'Dr. A.J. Sunija', email: 'ajschem@tce.edu' },
-      ],
-    },
-  ];
+  // const contacts = [
+  //   {
+  //     role: 'Principal',
+  //     people: [
+  //       { name: 'Dr. L. Ashok Kumar', email: 'principal@tce.edu' },
+  //     ],
+  //   },
+  //   {
+  //     role: 'Dean - Student Affairs',
+  //     people: [
+  //       { name: 'Dr. G. Balaji', email: 'gbarch@tce.edu' },
+  //     ],
+  //   },
+  //   {
+  //     role: 'Orientation Coordinators',
+  //     people: [
+  //       { name: 'H. Sri Vinodhini', email: 'srivinodhini@tce.edu' },
+  //       { name: 'Dr. P. M Devie', email: 'pmdeee@tce.edu' },
+  //     ],
+  //   },
+  //   {
+  //     role: 'Orientation Co-Coordinators',
+  //     people: [
+  //       { name: 'Dr. G. Jeya Jeevakani', email: 'gjjeng@tce.edu' },
+  //       { name: 'Dr. S Subash', email: 'ssheng@tce.edu' },
+  //       { name: 'Dr. A.J. Sunija', email: 'ajschem@tce.edu' },
+  //     ],
+  //   },
+  // ];
 
   return (
     <footer className="bg-gray-900 text-gray-300 font-sans">
@@ -57,18 +57,18 @@ const Footer = () => {
 
           {/* Column 1: Helpdesk Title (Visually Elevated) */}
           <div className="lg:col-span-2 bg-gray-800 p-6 rounded-xl shadow-md border border-indigo-500">
-            <h2 className="text-2xl font-bold text-indigo-300 tracking-tight">
+            {/* <h2 className="text-2xl font-bold text-indigo-300 tracking-tight">
               Helpdesk & Support
             </h2>
             <p className="mt-4 text-gray-300 max-w-lg">
               Our team is available to assist you with any inquiries. Please feel free to reach out to us via email.
             </p>
-          <h3 className="text-xl font-semibold mb-4 text-gray-800">Help Desk – Escalation Procedure</h3>
-      <img
+          <h3 className="text-xl font-semibold mb-4 text-gray-800">Help Desk – Escalation Procedure</h3> */}
+      {/* <img
         src="/images/helpdesk-escalation.png" // 👈 Place your image here in public/images folder
         alt="Help Desk Escalation Table"
         className="w-full max-w-4xl border border-gray-300 rounded shadow"
-      />
+      /> */}
           </div>
 
           {/* Column 2: Contact Links */}
@@ -106,11 +106,11 @@ const Footer = () => {
               <li className="text-base text-indigo-300">
                 <span className="font-semibold text-white">Department of Information Technology</span>
               </li>
-              <li className="pt-4 text-sm text-gray-400">
+              {/* <li className="pt-4 text-sm text-gray-400">
                 With guidance from{' '}
                 <span className="text-white font-medium">Dr. C. Deisy</span>, Head of Department, and{' '}
                 <span className="text-white font-medium">C.V. Nisha Angeline</span>, Assistant Professor
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
