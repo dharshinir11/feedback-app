@@ -1,17 +1,22 @@
 // src/api/feedbackApi.js
-import sessionData from '../data/sessionData'; // Adjust path if needed
+import sessionData from '../data/sessionData.json'; // Adjust path if needed
+import questions from '../data/questions';
+ 
 
 const API_URL = 'https://server.tceapps.in';
-
-export const questions = {
-  Q1: "Opinion about overall session",
-  Q2: "Clarity in the speech",
-  Q3: "Speaker's interaction with the students",
-  Q4: "Did the session deliver the information you expected to receive",
-  Q5: "Was the subject matter presented effectively",
-  Q6: "Is the speaker knowledgeable",
-  Q7: "Suggestions/Questions/Feedback"
-};
+export { questions };
+// export const questions = {
+//   Q1: "How would you rate the overall organization of the hackathon?",
+//   Q2: "How satisfied are you with the communication & updates (instructions, timings, announcements)?",
+//   Q3: "How do you rate the venue & arrangements (seating, internet, power supply, facilities)?",
+//   Q4: "How confident you are after attending the internal hackathon?",
+//   Q5: "How supportive and approachable were the faculty coordinators & mentors?",
+//   Q6: "Did the Jury comments and input give scope for refining or improving your idea?",
+//   Q7: "Did the hackathon provide a good opportunity to showcase your skills and creativity?",
+//   Q8: "How do you rate the time management & scheduling of the event?",
+//   Q9: "How useful was the hackathon in terms of your learning & overall experience?",
+//   Q10: "How likely are you to recommend participation in future hackathons to your peers?"
+// };
 
 /**
  * Helper to get sorted dates for a department from sessionData.
