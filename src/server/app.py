@@ -12,6 +12,7 @@ CORS(app)
 app.secret_key = 'admin_secret_key'
 
 DATA_FILE = "data/feedback.json"
+SESSION_FILE = "static/session_data.json"  # or wherever your sessionData lives
 
 
 
